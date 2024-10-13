@@ -6,7 +6,7 @@ export default defineConfig({
   base: '/it-support-website/',
   plugins: [react()],
   build: {
-    outDir: 'docs',
+    outDir: 'dist',
     assetsDir: 'assets',
   }
 })

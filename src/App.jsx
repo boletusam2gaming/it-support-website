@@ -7,6 +7,7 @@ import KnowledgeBase from './components/KnowledgeBase.jsx';
 import TicketingSystem from './components/TicketingSystem';
 import LiveChat from './components/LiveChat';
 import Auth from './components/Auth';
+import Contact from './components/contact';
 import './App.css';
 
 
@@ -28,9 +29,11 @@ function App() {
         <Route path="/ticketingsystem" element={<TicketingSystem/>}/>
         <Route path="/livechat" element={<LiveChat/>}/>
         <Route path="/auth" element={<Auth/>}/>
-      </Routes>
+        <Route path="/Contact" element={<Contact/>}/>
+      </Routes> 
+      <Footer/>
     </div>
-    <Footer/>
+   
     </Router>
   )
 }
