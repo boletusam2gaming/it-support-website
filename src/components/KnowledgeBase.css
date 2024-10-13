@@ -1,0 +1,66 @@
+.knowledgebase {
+  padding: 20px;
+  text-align: center;
+}
+
+.knowledgebase h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.knowledgebase p {
+  margin-bottom: 20px;
+}
+
+.services, .faq {
+  margin-bottom: 20px;
+}
+
+.services h2, .faq h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.services ul, .faq ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.services li, .faq li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+.arrow {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+  
+}
+
+.arrow.down {
+  transform: rotate(135deg);
+}
+
+.arrow.side {
+  transform: rotate(45deg);
+}
+
+.faq li p {
+  margin: 5px 0 0 0;
+  user-select: none;
+}

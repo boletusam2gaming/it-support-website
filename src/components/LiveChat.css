@@ -1,0 +1,52 @@
+/* LiveChat.jsx css */
+
+.live-chat{
+    padding: 20px;
+    text-align: center;
+}
+.chat-window{
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.messages{
+    flex:1;
+    overflow-y: auto;
+    margin-bottom:10px;
+}
+.message{
+    padding:10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.message.user{
+    background-color: #e1ffc7;
+    align-self: flex-end;
+}
+.message.support{
+    background-color: #f1f1f1;
+    align-self: flex-start;
+
+}
+.message-input{
+    display: flex;
+}
+.message-input input{
+    flex:1;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.message-input button{
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.message-input button:hover{
+    background-color: #0056b3;
+}

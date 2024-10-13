@@ -1,0 +1,57 @@
+/* Homepage.jsx css */
+.homepage{
+    padding:20px;
+    text-align: center;
+}
+.services{
+    margin-top: 20px;
+    text-align: center;
+}
+.services ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 31px;
+    
+}
+.services ul:before{
+    content: "";
+    display: table;
+}
+.services ul li{
+    margin: 10px 0;
+}
+.dropdown{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    padding-left: 20px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dropdown-button{
+    background-color: #6c6d6d;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+.dropdown-button:hover{
+    background-color: #0056b3;
+}
+
+  
+.dropdown li {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+}
+.dropdown.open{
+    background-color: #6c6d6d;
+}

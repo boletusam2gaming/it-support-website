@@ -1,0 +1,29 @@
+/* Footer.jsx css */
+.footer{
+    background-color: #282c34;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer ul{
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+
+}
+.footer ul li{
+    display: inline;
+    margin:0;
+}
+
+footer ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+.footer ul li a:hover{
+    color: #61dafb;
+}

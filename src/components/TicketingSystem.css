@@ -1,0 +1,44 @@
+/* TicketingSystem.jsx css */
+.ticketing-system{
+    padding: 20px;
+    text-align: center;
+}
+
+.ticketing-system form{
+    margin-bottom: 20px;
+}
+.ticketing-system form div{
+    margin-bottom: 10px;
+}
+.ticketing-system label{
+    display: block;
+    margin-bottom: 5px;
+}
+.ticketing-system input[type="text"],
+.ticketing-system input[type="email"],
+.ticketing-system input[type="issue"],
+.ticketing-system textarea{
+    width:auto;
+    padding: 5px;
+    margin-top: 5px;
+}
+.ticketing-system button{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ticketing-system button:hover{
+    background-color: #0056b3;
+}
+.ticketing-system ul{
+    list-style-type: none;
+    padding: 0;
+}
+.ticketing-system ul li{
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}

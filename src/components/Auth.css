@@ -1,0 +1,63 @@
+/* Auth.jsx css */
+
+.auth-container{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 120px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9; 
+}
+
+.auth-toggle {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.auth-toggle button {
+padding: 10px 20px;
+border: none;
+background-color: #007bff;
+color: white;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.auth-toggle button.active {
+background-color: #0056b3;
+}
+
+.auth-form {
+display: flex;
+flex-direction: column;
+}
+
+.auth-form div {
+margin-bottom: 10px;
+}
+
+.auth-form label {
+margin-bottom: 5px;
+}
+
+.auth-form input {
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
+width: 100%;
+box-sizing: border-box;
+}
+
+.auth-form button {
+padding: 10px;
+border: none;
+background-color: #007bff;
+color: white;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.auth-form button:hover {
+background-color: #0056b3;
+}

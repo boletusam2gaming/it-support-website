@@ -1,0 +1,41 @@
+/* Header.jsx css*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+.logo{
+    padding: auto;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+nav ul li a:hover{
+    color: #61dafb;
+}
+.search-bar input{
+    padding: 5px;
+    border-radius: 6px;
+    border: 3px solid #333;
+}
