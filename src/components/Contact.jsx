@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import './Contact.css';
+import axios from "axios";
 
 function Contact(){
     const [formData, setFormData] = useState({  
@@ -7,6 +8,9 @@ function Contact(){
         email: "",
         message: ""
     });
+
+
+    const [feedbackMessage, setFeedbackMessage] = useState("");
 
     const handleChange = (e) => {
         const {name, value} = e.target;
@@ -16,10 +20,16 @@ function Contact(){
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         // Handle form submission
-        console.log("Form Submitted", formData);
+       try{
+        const response = await axios.post("http://localhost:5000/send", formData);
+        setFeedbackMessage(response.data);
+       }catch(error){
+            const errorMessage = error.response.data ? error.response.data : 'Failed to send message';
+            setFeedbackMessage(errorMessage);
+       }
     };
 
     return(
@@ -60,6 +70,7 @@ function Contact(){
                 </div>
                 <button type="submit">Submit</button>
             </form>
+            {feedbackMessage && <p>{feedbackMessage}</p>}
         </div>
     );
 
